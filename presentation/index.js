@@ -57,6 +57,12 @@ import { RenderProps } from "./renderProps";
 import { StaticTypeChecking } from "./staticTypeChecking";
 import { PropTypes } from "./propTypes";
 import { StrictMode } from "./strictMode";
+import { Principle1 } from "./principle1";
+import { Principle2 } from "./principle2";
+import { Pure } from "./pure";
+import { Principle3 } from "./principle3";
+import { Middlewares } from "./middlewares";
+import { Sideeffects } from "./sideeffects";
 
 // Require CSS
 require("normalize.css");
@@ -342,6 +348,63 @@ export default class Presentation extends React.Component {
         <Slide bgColor={QUATERNARY}>
           <BlockQuote>
             <Quote>Pequeño UI Kit con styleguidist + Semantic React</Quote>
+            <Cite>Ejercicio</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["zoom"]}>
+          <Heading fit caps>
+            Curso de React
+          </Heading>
+          <Heading fit caps textColor="secondary">
+            Capítulo IV: Redux
+          </Heading>
+          <Text margin="20px 0 0" textColor={TERTIARY}>
+            Javier Vidal. 2018. Fictizia
+          </Text>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Principle1 />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Principle2 />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Pure />
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Principle3 />
+        </Slide>
+
+        <Slide bgColor={QUATERNARY}>
+          <BlockQuote>
+            <Quote>Añade Redux a la calculadora</Quote>
+            <Cite>Ejercicio</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Middlewares />
+        </Slide>
+
+        <Slide bgColor={QUATERNARY}>
+          <BlockQuote>
+            <Quote>Crea middlewares: delay, throttling</Quote>
+            <Cite>Ejercicio</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={["slide"]}>
+          <Sideeffects />
+        </Slide>
+
+        <Slide bgColor={QUATERNARY}>
+          <BlockQuote>
+            <Quote>Crea una aplicación del tiempo</Quote>
             <Cite>Ejercicio</Cite>
           </BlockQuote>
         </Slide>

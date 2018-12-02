@@ -12,6 +12,7 @@ export class Intro extends React.Component {
           <ListItem>Capitulo I: Tutorial '3 en Raya'</ListItem>
           <ListItem>Capitulo II: Conceptos básicos</ListItem>
           <ListItem>Capitulo III: Conceptos avanzados</ListItem>
+          <ListItem>Capitulo IV: Redux</ListItem>
         </List>
       </React.Fragment>
     );
